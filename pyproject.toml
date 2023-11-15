@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wagifoeb"
-version = "0.1.0"
+version = "0.1.1"
 description = "Wrapper around original gifoeb code"
 authors = ["Roberto Alamos <roberto@aospa.cl>"]
 readme = "README.md"
@@ -14,6 +14,10 @@ requests = "^2.31.0"
 
 [tool.poetry.scripts]
 wagifoeb = "wagifoeb.cli:run"
+
+
+[tool.poetry.group.dev]
+optional = true
 
 
 [tool.poetry.group.dev.dependencies]
